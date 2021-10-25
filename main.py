@@ -117,6 +117,11 @@ def test_numai_numere_doar_cu_cifre_prime():
     assert numai_numere_doar_cu_cifre_prime([2357, 5377, 2323]) == True
 
 def subsecventa_max_numere_patrate_perfecte(l):
+    '''
+    Determina subsecventa maxima de numere patrate perfecte dintr-o lista
+    :param l: lista de numere intregi.
+    :return: Lista de numere intregi (patrate perfecte)
+    '''
     secv_max = []
     for i in range (0, len(l)):
         for j in range (i, len(l)):
@@ -131,6 +136,11 @@ def test_subsecventa_max_numere_patrate_perfecte():
 
 
 def subsecventa_max_numai_numere_prime(l):
+    '''
+    Determina subsecventa maxima de numere prime dintr-o lista
+    :param l: lista de numere intregi.
+    :return: Lista de numere intregi (numere prime)
+    '''
     secv_max = []
     for i in range (0, len(l)):
         for j in range (i, len(l)):
@@ -145,6 +155,11 @@ def test_subsecventa_max_numai_numere_prime():
 
 
 def subsecventa_max_numere_cu_cifre_prime(l):
+    '''
+    Determina subsecventa maxima de numere ale caror cifre sunt numere prime dintr-o lista
+    :param l: lista de numere intregi.
+    :return: Lista de numere intregi (care sunt formate din cifre prime)
+    '''
     secv_max = []
     for i in range(0, len(l)):
         for j in range(i, len(l)):
